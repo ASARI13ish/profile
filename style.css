@@ -1,0 +1,152 @@
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  color: #e63946;
+  font-weight: 600;
+  font-size: 26px;
+  margin: 35px;
+}
+
+#introduction {
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  color: #e63946;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+p {
+  color: #1d3557;
+}
+
+a {
+  color: #457b9d;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover {
+  color: #e63946;
+  background-color: transparent;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 150px;
+}
+
+#profile-pic {
+  border: solid, #e63946, 8px;
+  width: 135px;
+}
+
+#profile-button {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #457b9d;
+  border-radius: 10px;
+}
+
+#profile-button:hover {
+  background-color: #e63946;
+}
+
+.container {
+  background-color: white;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.hobbies-list li {
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+
+.hobbies-list li:before {
+  content: "•";
+  position: absolute;
+  left: -13px;
+  color: #e63946;
+}
+
+.network-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 60px;
+  text-align: center;
+}
+
+.list-inline {
+  display: inline;
+}
+
+.list-inline a {
+  color: #1d3557;
+}
+
+.list-inline a:hover {
+  color: #e63946;
+  background-color: transparent;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+  .container {
+      width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+      width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+      width: 300px;
+  }
+  .card {
+      padding: 20px;
+  }
+  h1 {
+      font-size: 22px;
+  }
+  h2, h3 {
+      font-size: 18px;
+  }
+}
