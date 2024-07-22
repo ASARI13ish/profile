@@ -9,9 +9,21 @@ body {
   text-align: center;
 }
 
-h1 {
+#title {
+  color: #457b9d;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+
+.header {
+  font-family: "Montserrat", sans-serif;
   color: #e63946;
   font-weight: 600;
+  text-transform: uppercase;
+}
+
+h1 {
   font-size: 26px;
   margin: 35px;
 }
@@ -21,12 +33,11 @@ h1 {
 }
 
 h2, h3 {
-  color: #e63946;
-  font-weight: 600;
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
-p {
+p, li {
   color: #1d3557;
 }
 
@@ -47,7 +58,7 @@ a:hover {
 }
 
 #profile-pic {
-  border: solid, #e63946, 8px;
+  border: solid 8px #e63946;
   width: 135px;
 }
 
@@ -57,6 +68,8 @@ a:hover {
   padding: 10px;
   background-color: #457b9d;
   border-radius: 10px;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 #profile-button:hover {
@@ -77,13 +90,13 @@ a:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.hobbies-list {
+.hobbies-list, .skills-list, .projects-list, .network-list {
   list-style: none;
   padding: 0;
   text-align: center;
 }
 
-.hobbies-list li {
+.hobbies-list li, .skills-list li {
   display: inline-block;
   margin: 0 10px;
   position: relative;
@@ -96,15 +109,27 @@ a:hover {
   color: #e63946;
 }
 
+.skills-list li i {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.skills-list {
+  line-height: 41px;
+}
+
+.projects-list li {
+  margin: 10px 0;
+}
+
 .network-list {
-  list-style: none;
-  padding-left: 0;
   font-size: 60px;
   text-align: center;
 }
 
 .list-inline {
-  display: inline;
+  display: inline-block;
+  padding: 0 20px;
 }
 
 .list-inline a {
@@ -114,13 +139,6 @@ a:hover {
 .list-inline a:hover {
   color: #e63946;
   background-color: transparent;
-}
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
 }
 
 /* Media Queries */
@@ -148,5 +166,8 @@ a:hover {
   }
   h2, h3 {
       font-size: 18px;
+  }
+  #profile-button {
+      padding: 8px;
   }
 }
